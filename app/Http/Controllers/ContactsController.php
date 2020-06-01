@@ -53,8 +53,8 @@ class ContactsController extends Controller
         return request()->validate([
             'name' => 'required',
             'email' => 'required|email',
-            'birthday' => '',
-            'company' => '',
+            'birthday' => 'required',
+            'company' => 'required',
         ]);
     }
 }
